@@ -80,11 +80,11 @@
             </objects>
             <point key="canvasLocation" x="3042" y="1284"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--Third View Controller - Item-->
         <scene sceneID="us6-Fu-urs">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTV-FE-ecx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="vLr-yI-wmr" sceneMemberID="viewController">
+                <viewController id="vLr-yI-wmr" customClass="ThirdViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T6U-ky-bgz">
                         <rect key="frame" x="0.0" y="20" width="768" height="955"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
