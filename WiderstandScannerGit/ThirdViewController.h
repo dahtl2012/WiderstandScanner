@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThirdViewController : UIViewController
+@interface ThirdViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerViewEins;
+- (IBAction)berechnungPressed:(id)sender;
+
+@property (strong, nonatomic) NSMutableArray *dataEins;
 
 @end
