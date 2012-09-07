@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B48F2F1E15F9D55200F6F7A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */; };
+		B48F2F2015F9D55200F6F7A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F1F15F9D55200F6F7A5 /* Foundation.framework */; };
+		B48F2F2215F9D55200F6F7A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F2115F9D55200F6F7A5 /* CoreGraphics.framework */; };
+		B48F2F2815F9D55200F6F7A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F2615F9D55200F6F7A5 /* InfoPlist.strings */; };
+		B48F2F2A15F9D55200F6F7A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F2F2915F9D55200F6F7A5 /* main.m */; };
+		B48F2F2E15F9D55200F6F7A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F2F2D15F9D55200F6F7A5 /* AppDelegate.m */; };
+		B48F2F3115F9D55200F6F7A5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F2F15F9D55200F6F7A5 /* MainStoryboard_iPhone.storyboard */; };
+		B48F2F3415F9D55200F6F7A5 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F3215F9D55200F6F7A5 /* MainStoryboard_iPad.storyboard */; };
+		B48F2F3715F9D55200F6F7A5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F2F3615F9D55200F6F7A5 /* FirstViewController.m */; };
+		B48F2F3915F9D55200F6F7A5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F3815F9D55200F6F7A5 /* first.png */; };
+		B48F2F3B15F9D55200F6F7A5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F3A15F9D55200F6F7A5 /* first@2x.png */; };
+		B48F2F3E15F9D55200F6F7A5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F2F3D15F9D55200F6F7A5 /* SecondViewController.m */; };
+		B48F2F4015F9D55200F6F7A5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F3F15F9D55200F6F7A5 /* second.png */; };
+		B48F2F4215F9D55200F6F7A5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F4115F9D55200F6F7A5 /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B48F2F1915F9D55200F6F7A5 /* WiderstandScannerGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiderstandScannerGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B48F2F1F15F9D55200F6F7A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B48F2F2115F9D55200F6F7A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B48F2F2515F9D55200F6F7A5 /* WiderstandScannerGit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiderstandScannerGit-Info.plist"; sourceTree = "<group>"; };
+		B48F2F2715F9D55200F6F7A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B48F2F2915F9D55200F6F7A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B48F2F2B15F9D55200F6F7A5 /* WiderstandScannerGit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiderstandScannerGit-Prefix.pch"; sourceTree = "<group>"; };
+		B48F2F2C15F9D55200F6F7A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B48F2F2D15F9D55200F6F7A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B48F2F3015F9D55200F6F7A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B48F2F3315F9D55200F6F7A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B48F2F3515F9D55200F6F7A5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B48F2F3615F9D55200F6F7A5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B48F2F3815F9D55200F6F7A5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		B48F2F3A15F9D55200F6F7A5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		B48F2F3C15F9D55200F6F7A5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B48F2F3D15F9D55200F6F7A5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B48F2F3F15F9D55200F6F7A5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		B48F2F4115F9D55200F6F7A5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B48F2F1615F9D55200F6F7A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48F2F1E15F9D55200F6F7A5 /* UIKit.framework in Frameworks */,
+				B48F2F2015F9D55200F6F7A5 /* Foundation.framework in Frameworks */,
+				B48F2F2215F9D55200F6F7A5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B48F2F0E15F9D55200F6F7A5 = {
+			isa = PBXGroup;
+			children = (
+				B48F2F2315F9D55200F6F7A5 /* WiderstandScannerGit */,
+				B48F2F1C15F9D55200F6F7A5 /* Frameworks */,
+				B48F2F1A15F9D55200F6F7A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B48F2F1A15F9D55200F6F7A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B48F2F1915F9D55200F6F7A5 /* WiderstandScannerGit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B48F2F1C15F9D55200F6F7A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */,
+				B48F2F1F15F9D55200F6F7A5 /* Foundation.framework */,
+				B48F2F2115F9D55200F6F7A5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B48F2F2315F9D55200F6F7A5 /* WiderstandScannerGit */ = {
+			isa = PBXGroup;
+			children = (
+				B48F2F2C15F9D55200F6F7A5 /* AppDelegate.h */,
+				B48F2F2D15F9D55200F6F7A5 /* AppDelegate.m */,
+				B48F2F2F15F9D55200F6F7A5 /* MainStoryboard_iPhone.storyboard */,
+				B48F2F3215F9D55200F6F7A5 /* MainStoryboard_iPad.storyboard */,
+				B48F2F3515F9D55200F6F7A5 /* FirstViewController.h */,
+				B48F2F3615F9D55200F6F7A5 /* FirstViewController.m */,
+				B48F2F3815F9D55200F6F7A5 /* first.png */,
+				B48F2F3A15F9D55200F6F7A5 /* first@2x.png */,
+				B48F2F3C15F9D55200F6F7A5 /* SecondViewController.h */,
+				B48F2F3D15F9D55200F6F7A5 /* SecondViewController.m */,
+				B48F2F3F15F9D55200F6F7A5 /* second.png */,
+				B48F2F4115F9D55200F6F7A5 /* second@2x.png */,
+				B48F2F2415F9D55200F6F7A5 /* Supporting Files */,
+			);
+			path = WiderstandScannerGit;
+			sourceTree = "<group>";
+		};
+		B48F2F2415F9D55200F6F7A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B48F2F2515F9D55200F6F7A5 /* WiderstandScannerGit-Info.plist */,
+				B48F2F2615F9D55200F6F7A5 /* InfoPlist.strings */,
+				B48F2F2915F9D55200F6F7A5 /* main.m */,
+				B48F2F2B15F9D55200F6F7A5 /* WiderstandScannerGit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B48F2F1815F9D55200F6F7A5 /* WiderstandScannerGit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B48F2F4515F9D55200F6F7A5 /* Build configuration list for PBXNativeTarget "WiderstandScannerGit" */;
+			buildPhases = (
+				B48F2F1515F9D55200F6F7A5 /* Sources */,
+				B48F2F1615F9D55200F6F7A5 /* Frameworks */,
+				B48F2F1715F9D55200F6F7A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiderstandScannerGit;
+			productName = WiderstandScannerGit;
+			productReference = B48F2F1915F9D55200F6F7A5 /* WiderstandScannerGit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B48F2F1015F9D55200F6F7A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "HTL Hollabrunn";
+			};
+			buildConfigurationList = B48F2F1315F9D55200F6F7A5 /* Build configuration list for PBXProject "WiderstandScannerGit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B48F2F0E15F9D55200F6F7A5;
+			productRefGroup = B48F2F1A15F9D55200F6F7A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B48F2F1815F9D55200F6F7A5 /* WiderstandScannerGit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B48F2F1715F9D55200F6F7A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48F2F2815F9D55200F6F7A5 /* InfoPlist.strings in Resources */,
+				B48F2F3115F9D55200F6F7A5 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B48F2F3415F9D55200F6F7A5 /* MainStoryboard_iPad.storyboard in Resources */,
+				B48F2F3915F9D55200F6F7A5 /* first.png in Resources */,
+				B48F2F3B15F9D55200F6F7A5 /* first@2x.png in Resources */,
+				B48F2F4015F9D55200F6F7A5 /* second.png in Resources */,
+				B48F2F4215F9D55200F6F7A5 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B48F2F1515F9D55200F6F7A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48F2F2A15F9D55200F6F7A5 /* main.m in Sources */,
+				B48F2F2E15F9D55200F6F7A5 /* AppDelegate.m in Sources */,
+				B48F2F3715F9D55200F6F7A5 /* FirstViewController.m in Sources */,
+				B48F2F3E15F9D55200F6F7A5 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B48F2F2615F9D55200F6F7A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B48F2F2715F9D55200F6F7A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B48F2F2F15F9D55200F6F7A5 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B48F2F3015F9D55200F6F7A5 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B48F2F3215F9D55200F6F7A5 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B48F2F3315F9D55200F6F7A5 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B48F2F4315F9D55200F6F7A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B48F2F4415F9D55200F6F7A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B48F2F4615F9D55200F6F7A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiderstandScannerGit/WiderstandScannerGit-Prefix.pch";
+				INFOPLIST_FILE = "WiderstandScannerGit/WiderstandScannerGit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B48F2F4715F9D55200F6F7A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiderstandScannerGit/WiderstandScannerGit-Prefix.pch";
+				INFOPLIST_FILE = "WiderstandScannerGit/WiderstandScannerGit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B48F2F1315F9D55200F6F7A5 /* Build configuration list for PBXProject "WiderstandScannerGit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B48F2F4315F9D55200F6F7A5 /* Debug */,
+				B48F2F4415F9D55200F6F7A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B48F2F4515F9D55200F6F7A5 /* Build configuration list for PBXNativeTarget "WiderstandScannerGit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B48F2F4615F9D55200F6F7A5 /* Debug */,
+				B48F2F4715F9D55200F6F7A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B48F2F1015F9D55200F6F7A5 /* Project object */;
+}
