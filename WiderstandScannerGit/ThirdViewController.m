@@ -265,4 +265,74 @@
     m = 0;
     g = 0;
 }
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    /*if (component == 0) {
+        NSLog(@"0");
+    }
+    if (component == 1) {
+        NSLog(@"1");
+    }
+    if (component == 2) {
+        NSLog(@"2");
+    }
+    if (component == 3) {
+        NSLog(@"3");
+    }*/
+    
+    NSInteger null, eins, zwei, drei;
+    
+    null = [self.pickerViewEins selectedRowInComponent:0];
+    eins = [self.pickerViewEins selectedRowInComponent:1];
+    zwei = [self.pickerViewEins selectedRowInComponent:2];
+    drei = [self.pickerViewEins selectedRowInComponent:3];
+    
+    [self setColourForRing:null];
+    [self setColourForRing:eins];
+    [self setColourForRing:zwei];
+    [self setColourForRing:drei];
+    
+}
+
+-(void)setColourForRing:(NSInteger)ring {
+    
+    switch (ring) {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        case 4:
+            
+            break;
+        case 5:
+            
+            break;
+        case 6:
+            
+            break;
+        case 7:
+            
+            break;
+        case 8:
+            
+            break;
+        case 9:
+            
+            break;
+            
+        default:
+            break;
+    }
+
+}
+
 @end

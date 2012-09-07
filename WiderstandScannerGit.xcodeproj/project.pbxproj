@@ -22,6 +22,7 @@
 		B48F2F3E15F9D55200F6F7A5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F2F3D15F9D55200F6F7A5 /* SecondViewController.m */; };
 		B48F2F4015F9D55200F6F7A5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F3F15F9D55200F6F7A5 /* second.png */; };
 		B48F2F4215F9D55200F6F7A5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F4115F9D55200F6F7A5 /* second@2x.png */; };
+		B48F2F5515FA02B300F6F7A5 /* widerstand.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F2F5415FA02B300F6F7A5 /* widerstand.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		B48F2F3D15F9D55200F6F7A5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B48F2F3F15F9D55200F6F7A5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		B48F2F4115F9D55200F6F7A5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		B48F2F5415FA02B300F6F7A5 /* widerstand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widerstand.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				40601EF815F9DAEA000C848D /* ThirdViewController.h */,
 				40601EF915F9DAEA000C848D /* ThirdViewController.m */,
+				B48F2F5415FA02B300F6F7A5 /* widerstand.png */,
 			);
 			name = Eingabe;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				B48F2F3B15F9D55200F6F7A5 /* first@2x.png in Resources */,
 				B48F2F4015F9D55200F6F7A5 /* second.png in Resources */,
 				B48F2F4215F9D55200F6F7A5 /* second@2x.png in Resources */,
+				B48F2F5515FA02B300F6F7A5 /* widerstand.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
