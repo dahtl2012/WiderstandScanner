@@ -15,6 +15,10 @@
 @implementation ThirdViewController
 @synthesize pickerViewEins;
 @synthesize ergebnisAnzeige;
+@synthesize ringEins;
+@synthesize ringZwei;
+@synthesize ringDrei;
+@synthesize ringVier;
 @synthesize dataEins;
 @synthesize erg;
 
@@ -39,6 +43,10 @@
 {
     [self setPickerViewEins:nil];
     [self setErgebnisAnzeige:nil];
+    [self setRingEins:nil];
+    [self setRingZwei:nil];
+    [self setRingDrei:nil];
+    [self setRingVier:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -288,45 +296,358 @@
     zwei = [self.pickerViewEins selectedRowInComponent:2];
     drei = [self.pickerViewEins selectedRowInComponent:3];
     
-    [self setColourForRing:null];
-    [self setColourForRing:eins];
-    [self setColourForRing:zwei];
-    [self setColourForRing:drei];
+    [self setColourForRing:0 AndRow:null];
+    [self setColourForRing:1 AndRow:eins];
+    [self setColourForRing:2 AndRow:zwei];
+    [self setColourForRing:3 AndRow:drei];
     
 }
 
--(void)setColourForRing:(NSInteger)ring {
+-(void)setColourForRing:(NSInteger)ring AndRow:(NSInteger)row {
     
-    switch (ring) {
+    switch (row) {
         case 0:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor blackColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor blackColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor blackColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor blackColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+
             break;
         case 1:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor brownColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor brownColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor brownColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor brownColor];
+                    break;
+                    
+                default:
+                    break;
+            }
             break;
         case 2:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor redColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor redColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor redColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor redColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+
             break;
         case 3:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor orangeColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor orangeColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor orangeColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor orangeColor];
+                    break;
+                    
+                default:
+                    break;
+            }
             break;
         case 4:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor yellowColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor yellowColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor yellowColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor yellowColor];
+                    break;
+                    
+                default:
+                    break;
+            }
             break;
         case 5:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor greenColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor greenColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor greenColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor greenColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+
             break;
         case 6:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor blueColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor blueColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor blueColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor blueColor];
+                    break;
+                    
+                default:
+                    break;
+            }
             break;
         case 7:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor purpleColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor purpleColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor purpleColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor purpleColor];
+                    break;
+                    
+                default:
+                    break;
+            }
             break;
         case 8:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor grayColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor grayColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor grayColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor grayColor];
+                    break;
+                    
+                default:
+                    break;
+            }
             break;
         case 9:
-            
+            switch (ring) {
+                case 0:
+                    self.ringEins.backgroundColor = [UIColor whiteColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 1:
+                    self.ringZwei.backgroundColor = [UIColor whiteColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 2:
+                    self.ringDrei.backgroundColor = [UIColor whiteColor];
+                    break;
+                    
+                default:
+                    break;
+            }
+            switch (ring) {
+                case 3:
+                    self.ringVier.backgroundColor = [UIColor whiteColor];
+                    break;
+                    
+                default:
+                    break;
+            }
             break;
             
         default:

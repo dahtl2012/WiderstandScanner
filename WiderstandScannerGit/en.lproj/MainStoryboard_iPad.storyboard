@@ -126,26 +126,34 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="TqL-Ab-FgV">
                                 <rect key="frame" x="312" y="124" width="48" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="OwB-0g-529">
                                 <rect key="frame" x="416" y="124" width="47" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Q8x-sc-rl7">
                                 <rect key="frame" x="521" y="124" width="48" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="49T-OL-cgM">
                                 <rect key="frame" x="207" y="124" width="46" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="TcK-PA-cuN"/>
                     <connections>
                         <outlet property="ergebnisAnzeige" destination="61n-16-Xl7" id="W1X-k5-rP9"/>
                         <outlet property="pickerViewEins" destination="5pB-nS-Fw8" id="pWo-SH-kvK"/>
+                        <outlet property="ringDrei" destination="OwB-0g-529" id="fdE-Mi-0c4"/>
+                        <outlet property="ringEins" destination="49T-OL-cgM" id="fve-NG-xWz"/>
+                        <outlet property="ringVier" destination="Q8x-sc-rl7" id="R2j-zM-2bZ"/>
+                        <outlet property="ringZwei" destination="TqL-Ab-FgV" id="PxU-Yt-Yab"/>
                     </connections>
                 </viewController>
             </objects>
@@ -190,6 +198,10 @@
                 <relationship kind="action" name="berechnungPressed:"/>
                 <relationship kind="outlet" name="ergebnisAnzeige" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pickerViewEins" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="ringDrei" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ringEins" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ringVier" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ringZwei" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>
