@@ -66,7 +66,7 @@
 
 - (IBAction)berechnungPressed:(id)sender {
     
-    NSInteger null, eins, zwei, drei;
+    NSInteger null, eins, zwei, drei, k, m, g;
     float a, b, c, d;
     
     null = [self.pickerViewEins selectedRowInComponent:0];
@@ -231,7 +231,38 @@
     self.erg = (a*10)+b;
     self.erg = erg*c;
     
-    self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fΩ +/- %.2f%%", erg, d];
+    /*if ((erg / 1000 >= 1) && (erg / 1000 <= 1000)) {
+        k = 1;
+    } else if ((erg / 1000000 >= 1) && (erg / 1000000 <= 1000000)) {
+        m = 1;
+    } else if ((erg / 1000000000 >= 1) && (erg / 1000000000 <= 1000000000)) {
+        g = 1;
+    }*/
+
+    if ((erg / 1000 >= 1) && (erg / 1000000 <= 1)) {
+        k = 1;
+    } else if ((erg / 1000000 >= 1) && (erg / 1000000000 <= 1)) {
+        m = 1;
+    } else if ((erg / 1000000000 >= 1)) {
+        g = 1;
+    }
     
+    if (k == 1) {
+        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fkΩ +/- %.2f%%", erg/1000, d];
+    }
+    else if (m == 1) {
+        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fMΩ +/- %.2f%%", erg/1000000, d];
+    }
+    else if (g == 1) {
+        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fGΩ +/- %.2f%%", erg/1000000000, d];
+    }
+    else {
+        
+        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fΩ +/- %.2f%%", erg, d];
+    }
+    
+    k = 0;
+    m = 0;
+    g = 0;
 }
 @end
