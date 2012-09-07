@@ -93,6 +93,7 @@
 		B48F2F2315F9D55200F6F7A5 /* WiderstandScannerGit */ = {
 			isa = PBXGroup;
 			children = (
+				B48F2F5215F9DC7C00F6F7A5 /* Eingabe */,
 				B48F2F4D15F9DA4200F6F7A5 /* Scan */,
 				B48F2F2C15F9D55200F6F7A5 /* AppDelegate.h */,
 				B48F2F2D15F9D55200F6F7A5 /* AppDelegate.m */,
@@ -102,8 +103,6 @@
 				B48F2F3615F9D55200F6F7A5 /* FirstViewController.m */,
 				B48F2F3815F9D55200F6F7A5 /* first.png */,
 				B48F2F3A15F9D55200F6F7A5 /* first@2x.png */,
-				40601EF815F9DAEA000C848D /* ThirdViewController.h */,
-				40601EF915F9DAEA000C848D /* ThirdViewController.m */,
 				B48F2F2415F9D55200F6F7A5 /* Supporting Files */,
 			);
 			path = WiderstandScannerGit;
@@ -129,6 +128,15 @@
 				B48F2F4115F9D55200F6F7A5 /* second@2x.png */,
 			);
 			name = Scan;
+			sourceTree = "<group>";
+		};
+		B48F2F5215F9DC7C00F6F7A5 /* Eingabe */ = {
+			isa = PBXGroup;
+			children = (
+				40601EF815F9DAEA000C848D /* ThirdViewController.h */,
+				40601EF915F9DAEA000C848D /* ThirdViewController.m */,
+			);
+			name = Eingabe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
