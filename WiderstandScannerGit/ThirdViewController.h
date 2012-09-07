@@ -12,7 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerViewEins;
 - (IBAction)berechnungPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *ergebnisAnzeige;
 
 @property (strong, nonatomic) NSMutableArray *dataEins;
+@property (nonatomic) float erg;
 
 @end
