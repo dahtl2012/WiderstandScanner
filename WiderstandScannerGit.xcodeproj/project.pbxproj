@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40601EFA15F9DAEA000C848D /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40601EF915F9DAEA000C848D /* ThirdViewController.m */; };
+		B47DBDFF15FDC673006EBC87 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47DBDFE15FDC673006EBC87 /* iAd.framework */; };
 		B48F2F1E15F9D55200F6F7A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */; };
 		B48F2F2015F9D55200F6F7A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F1F15F9D55200F6F7A5 /* Foundation.framework */; };
 		B48F2F2215F9D55200F6F7A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F2115F9D55200F6F7A5 /* CoreGraphics.framework */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		40601EF815F9DAEA000C848D /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		40601EF915F9DAEA000C848D /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B47DBDFE15FDC673006EBC87 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		B48F2F1915F9D55200F6F7A5 /* WiderstandScannerGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiderstandScannerGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B48F2F1F15F9D55200F6F7A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47DBDFF15FDC673006EBC87 /* iAd.framework in Frameworks */,
 				B48F2F1E15F9D55200F6F7A5 /* UIKit.framework in Frameworks */,
 				B48F2F2015F9D55200F6F7A5 /* Foundation.framework in Frameworks */,
 				B48F2F2215F9D55200F6F7A5 /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +91,7 @@
 		B48F2F1C15F9D55200F6F7A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B47DBDFE15FDC673006EBC87 /* iAd.framework */,
 				B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */,
 				B48F2F1F15F9D55200F6F7A5 /* Foundation.framework */,
 				B48F2F2115F9D55200F6F7A5 /* CoreGraphics.framework */,

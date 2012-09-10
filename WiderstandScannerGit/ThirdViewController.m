@@ -13,6 +13,7 @@
 @end
 
 @implementation ThirdViewController
+@synthesize adView;
 @synthesize pickerViewEins;
 @synthesize ergebnisAnzeige;
 @synthesize ringEins;
@@ -36,6 +37,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.adView.delegate = self;
+    
     self.dataEins = [[NSMutableArray alloc] initWithObjects:@"Schwarz", @"Braun", @"Rot", @"Orange", @"Gelb", @"Grün", @"Blau", @"Violett", @"Grau", @"Weiß", @"Silber", @"Gold", nil];
 }
 
@@ -47,6 +50,7 @@
     [self setRingZwei:nil];
     [self setRingDrei:nil];
     [self setRingVier:nil];
+    [self setAdView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -654,6 +658,16 @@
             break;
     }
 
+}
+
+-(void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    
+    self.adView.hidden = NO;
+}
+
+-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    
+    self.adView.hidden = YES;
 }
 
 @end

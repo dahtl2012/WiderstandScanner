@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface ThirdViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface ThirdViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerViewEins;
 - (IBAction)berechnungPressed:(id)sender;
@@ -21,6 +22,7 @@
 @property (strong, nonatomic) NSMutableArray *dataEins;
 @property (nonatomic) float erg;
 
+@property (weak, nonatomic) IBOutlet ADBannerView *adView;
 
 -(void)setColourForRing:(NSInteger)ring AndRow:(NSInteger)row;
 
