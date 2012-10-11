@@ -24,7 +24,7 @@
                                 <rect key="frame" x="199" y="785" width="370" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="Calculate">
+                                <state key="normal" title="Berechnen">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -81,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Input" id="rka-n0-6GV"/>
+                                    <navigationItem title="Eingabe" id="rka-n0-6GV"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -106,21 +106,6 @@
     <resources>
         <image name="widerstand.png" width="728" height="342"/>
     </resources>
-    <classes>
-        <class className="ThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="berechnungPressed:"/>
-                <relationship kind="outlet" name="adView" candidateClass="ADBannerView"/>
-                <relationship kind="outlet" name="ergebnisAnzeige" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pickerViewEins" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="ringDrei" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringEins" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringVier" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringZwei" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
