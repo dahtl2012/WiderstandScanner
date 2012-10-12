@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  WiderstandScannerGit
+
+  Created by Dominik Arnhof on 12.10.12.
+  Copyright (c) 2012 HTL Hollabrunn. All rights reserved.
+*/
+
+"BLACK" = "Schwarz";
+"BROWN" = "Braun";
+"RED" = "Rot";
+"ORANGE" = "Orange";
+"YELLOW" = "Gelb";
+"GREEN" = "Grün";
+"BLUE" = "Blau";
+"PURPLE" = "Violett";
+"GRAY" = "Grau";
+"WHITE" = "Weiß";
+"SILVER" = "Silber";
+"GOLD" = "Gold";

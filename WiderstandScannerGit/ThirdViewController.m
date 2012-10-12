@@ -39,7 +39,11 @@
     
     self.adView.delegate = self;
     
-    self.dataEins = [[NSMutableArray alloc] initWithObjects:@"Schwarz", @"Braun", @"Rot", @"Orange", @"Gelb", @"Grün", @"Blau", @"Violett", @"Grau", @"Weiß", @"Silber", @"Gold", nil];
+    //NSString *deviceType = [UIDevice currentDevice].model;
+    
+    //if([deviceType isEqualToString:@"iPad"]) {
+    self.dataEins = [[NSMutableArray alloc] initWithObjects:NSLocalizedString(@"BLACK", nil), NSLocalizedString(@"BROWN", nil), NSLocalizedString(@"RED", nil), NSLocalizedString(@"ORANGE", nil), NSLocalizedString(@"YELLOW", nil), NSLocalizedString(@"GREEN", nil), NSLocalizedString(@"BLUE", nil), NSLocalizedString(@"PURPLE", nil), NSLocalizedString(@"GRAY", nil), NSLocalizedString(@"WHITE", nil), NSLocalizedString(@"SILVER", nil), NSLocalizedString(@"GOLD", nil), nil];
+    //}
 }
 
 - (void)viewDidUnload
@@ -238,19 +242,19 @@
         default:
             break;
     }
-
+    
     
     self.erg = (a*10)+b;
     self.erg = erg*c;
     
     /*if ((erg / 1000 >= 1) && (erg / 1000 <= 1000)) {
-        k = 1;
-    } else if ((erg / 1000000 >= 1) && (erg / 1000000 <= 1000000)) {
-        m = 1;
-    } else if ((erg / 1000000000 >= 1) && (erg / 1000000000 <= 1000000000)) {
-        g = 1;
-    }*/
-
+     k = 1;
+     } else if ((erg / 1000000 >= 1) && (erg / 1000000 <= 1000000)) {
+     m = 1;
+     } else if ((erg / 1000000000 >= 1) && (erg / 1000000000 <= 1000000000)) {
+     g = 1;
+     }*/
+    
     if ((erg / 1000 >= 1) && (erg / 1000000 <= 1)) {
         k = 1;
     } else if ((erg / 1000000 >= 1) && (erg / 1000000000 <= 1)) {
@@ -281,17 +285,17 @@
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
     /*if (component == 0) {
-        NSLog(@"0");
-    }
-    if (component == 1) {
-        NSLog(@"1");
-    }
-    if (component == 2) {
-        NSLog(@"2");
-    }
-    if (component == 3) {
-        NSLog(@"3");
-    }*/
+     NSLog(@"0");
+     }
+     if (component == 1) {
+     NSLog(@"1");
+     }
+     if (component == 2) {
+     NSLog(@"2");
+     }
+     if (component == 3) {
+     NSLog(@"3");
+     }*/
     
     NSInteger null, eins, zwei, drei;
     
@@ -366,7 +370,7 @@
                 default:
                     break;
             }
-
+            
             break;
         case 3:
             switch (ring) {
@@ -477,7 +481,7 @@
                 case 3:
                     self.ringVier.backgroundColor = [UIColor grayColor];
                     break;
-
+                    
                     
                 default:
                     break;
@@ -542,9 +546,9 @@
             break;
         default:
             break;
-        
+            
     }
-
+    
 }
 
 -(void)bannerViewDidLoadAd:(ADBannerView *)banner {
@@ -555,6 +559,18 @@
 -(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
     
     self.adView.hidden = YES;
+}
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row
+          forComponent:(NSInteger)component reusingView:(UIView *)view {
+    UILabel *retval = (id)view;
+    if (!retval) {
+        retval= [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, [pickerView rowSizeForComponent:component].width, [pickerView rowSizeForComponent:component].height)];
+    }
+    retval.text = [self.dataEins objectAtIndex:row];
+    retval.font = [UIFont systemFontOfSize:20];
+    
+    return retval;
 }
 
 @end
