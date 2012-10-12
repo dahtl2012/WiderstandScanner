@@ -568,7 +568,7 @@
         retval= [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, [pickerView rowSizeForComponent:component].width, [pickerView rowSizeForComponent:component].height)];
     }
     retval.text = [self.dataEins objectAtIndex:row];
-    retval.font = [UIFont systemFontOfSize:20];
+    retval.font = [UIFont systemFontOfSize:19];
     
     return retval;
 }
