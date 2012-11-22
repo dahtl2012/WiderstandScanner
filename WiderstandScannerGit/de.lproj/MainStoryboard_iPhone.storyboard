@@ -42,11 +42,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" id="wyK-1m-m8C">
+                            <navigationBar contentMode="scaleToFill" id="wyK-1m-m8C">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Eingabe" id="KbD-LJ-k8n"/>
+                                    <navigationItem title="Widerstands Rechner" id="KbD-LJ-k8n"/>
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="r0b-fr-i5i">
@@ -88,21 +89,6 @@
             <point key="canvasLocation" x="3054" y="718"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="berechnungPressed:"/>
-                <relationship kind="outlet" name="adView" candidateClass="ADBannerView"/>
-                <relationship kind="outlet" name="ergebnisAnzeige" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pickerViewEins" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="ringDrei" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringEins" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringVier" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringZwei" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

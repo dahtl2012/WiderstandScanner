@@ -42,7 +42,18 @@
     //NSString *deviceType = [UIDevice currentDevice].model;
     
     //if([deviceType isEqualToString:@"iPad"]) {
-    self.dataEins = [[NSMutableArray alloc] initWithObjects:NSLocalizedString(@"BLACK", nil), NSLocalizedString(@"BROWN", nil), NSLocalizedString(@"RED", nil), NSLocalizedString(@"ORANGE", nil), NSLocalizedString(@"YELLOW", nil), NSLocalizedString(@"GREEN", nil), NSLocalizedString(@"BLUE", nil), NSLocalizedString(@"PURPLE", nil), NSLocalizedString(@"GRAY", nil), NSLocalizedString(@"WHITE", nil), NSLocalizedString(@"SILVER", nil), NSLocalizedString(@"GOLD", nil), nil];
+    self.dataEins = [[NSMutableArray alloc] initWithObjects:NSLocalizedString(@"BLACK", nil),
+                     NSLocalizedString(@"BROWN", nil),
+                     NSLocalizedString(@"RED", nil),
+                     NSLocalizedString(@"ORANGE", nil),
+                     NSLocalizedString(@"YELLOW", nil),
+                     NSLocalizedString(@"GREEN", nil),
+                     NSLocalizedString(@"BLUE", nil),
+                     NSLocalizedString(@"PURPLE", nil),
+                     NSLocalizedString(@"GRAY", nil),
+                     NSLocalizedString(@"WHITE", nil),
+                     NSLocalizedString(@"SILVER", nil),
+                     NSLocalizedString(@"GOLD", nil), nil];
     //}
 }
 
@@ -62,6 +73,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    //return (interfaceOrientation);
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -255,7 +267,11 @@
      g = 1;
      }*/
     
-    if ((erg / 1000 >= 1) && (erg / 1000000 <= 1)) {
+    if ((erg / 1000 <= 1)) {
+        k = 0;
+        m = 0;
+        g = 0;
+    } else if ((erg / 1000 >= 1) && (erg / 1000000 <= 1)) {
         k = 1;
     } else if ((erg / 1000000 >= 1) && (erg / 1000000000 <= 1)) {
         m = 1;
