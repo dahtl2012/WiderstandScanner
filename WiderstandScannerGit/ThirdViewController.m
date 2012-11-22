@@ -8,6 +8,8 @@
 
 #import "ThirdViewController.h"
 
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch] != NSOrderedAscending)
+
 @interface ThirdViewController ()
 
 @end
@@ -72,7 +74,12 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    //return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    
+    /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
+        return (interfaceOrientation);
+    } else {
+        return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    }*/
     return (interfaceOrientation);
 }
 

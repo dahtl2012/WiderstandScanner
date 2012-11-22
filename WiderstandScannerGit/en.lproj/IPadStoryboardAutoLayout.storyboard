@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="PB1-ou-6wq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Third View Controller - Berechnung-->
+        <scene sceneID="fJZ-VG-d2Y">
+            <objects>
+                <viewController id="PB1-ou-6wq" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y75-Pv-UMl">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-eM-7nF">
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="e8X-av-reh"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SY5-He-OS1">
+                                <connections>
+                                    <outlet property="dataSource" destination="PB1-ou-6wq" id="2Xq-Z2-vfX"/>
+                                    <outlet property="delegate" destination="PB1-ou-6wq" id="T5w-2s-3KV"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZU-D4-NAU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" type="user" id="GyY-dy-JP1"/>
+                                    <constraint firstAttribute="height" constant="104" id="o8r-n2-aI4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="berechnungPressed:" destination="PB1-ou-6wq" eventType="touchUpInside" id="5aa-YD-a9V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="olL-cb-SK0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="h3V-dq-oUR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="widerstand.png" translatesAutoresizingMaskIntoConstraints="NO" id="wpc-cG-bbA"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-Mc-CcX">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" type="user" id="fMb-pC-lF6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caD-M1-ONd">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" type="user" id="oRj-Q3-LYS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggX-u3-hup">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" type="user" id="XPn-m4-ouP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tim-oI-YEq">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" type="user" id="Kht-Mk-t80"/>
+                                    <constraint firstAttribute="height" constant="95" id="uZF-fU-4zJ"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs1-E8-R31">
+                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Resistor Calculator iOS 6" id="on3-PL-3Vv"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cms-1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Mge-DE-nkY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="2KS-v1-nX4"/>
+                                    <constraint firstAttribute="height" constant="82" id="rce-kX-YOB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Elektronik und Technische Informatik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0f2-vI-BL2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="565" id="Icm-0e-UbS"/>
+                                    <constraint firstAttribute="height" constant="21" id="xq6-DO-qyI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hollabrunn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sx-3E-Ebf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="nkA-TC-HkN"/>
+                                    <constraint firstAttribute="height" constant="21" id="t0M-ZS-sFJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tEN-eM-7nF" firstAttribute="bottom" secondItem="Y75-Pv-UMl" secondAttribute="bottom" type="default" id="3rT-3K-fnK"/>
+                            <constraint firstItem="YAb-Mc-CcX" firstAttribute="bottom" secondItem="tim-oI-YEq" secondAttribute="bottom" type="default" id="488-0s-apG"/>
+                            <constraint firstItem="Fs1-E8-R31" firstAttribute="leading" secondItem="Y75-Pv-UMl" secondAttribute="leading" type="default" id="8nk-Ts-O5b"/>
+                            <constraint firstItem="ggX-u3-hup" firstAttribute="bottom" secondItem="caD-M1-ONd" secondAttribute="bottom" type="default" id="AT5-fr-cEO"/>
+                            <constraint firstItem="LZU-D4-NAU" firstAttribute="top" secondItem="olL-cb-SK0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Dm2-OT-crU"/>
+                            <constraint firstAttribute="trailing" secondItem="SY5-He-OS1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="EAv-Zz-Obh"/>
+                            <constraint firstItem="caD-M1-ONd" firstAttribute="leading" secondItem="YAb-Mc-CcX" secondAttribute="trailing" constant="56" type="user" id="Es0-VA-FKQ"/>
+                            <constraint firstItem="tEN-eM-7nF" firstAttribute="leading" secondItem="Y75-Pv-UMl" secondAttribute="leading" type="default" id="Fq5-sL-2q2"/>
+                            <constraint firstItem="SY5-He-OS1" firstAttribute="top" secondItem="wpc-cG-bbA" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="JF6-QD-Pa7"/>
+                            <constraint firstItem="ggX-u3-hup" firstAttribute="top" secondItem="caD-M1-ONd" secondAttribute="top" type="default" id="JTw-kQ-a55"/>
+                            <constraint firstItem="caD-M1-ONd" firstAttribute="bottom" secondItem="YAb-Mc-CcX" secondAttribute="bottom" type="default" id="LYB-Cj-YuZ"/>
+                            <constraint firstItem="wpc-cG-bbA" firstAttribute="leading" secondItem="Y75-Pv-UMl" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="NKe-Gw-A6A"/>
+                            <constraint firstItem="tEN-eM-7nF" firstAttribute="trailing" secondItem="Y75-Pv-UMl" secondAttribute="trailing" type="default" id="O0F-AY-9Fe"/>
+                            <constraint firstAttribute="bottom" secondItem="LZU-D4-NAU" secondAttribute="bottom" constant="173" id="TtW-AB-L1P"/>
+                            <constraint firstItem="tim-oI-YEq" firstAttribute="top" secondItem="Y75-Pv-UMl" secondAttribute="top" constant="124" id="Vl2-38-Zfi"/>
+                            <constraint firstItem="YAb-Mc-CcX" firstAttribute="top" secondItem="tim-oI-YEq" secondAttribute="top" type="default" id="X55-ja-uSY"/>
+                            <constraint firstItem="Mge-DE-nkY" firstAttribute="leading" secondItem="Y75-Pv-UMl" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="alB-aw-2le"/>
+                            <constraint firstItem="Fs1-E8-R31" firstAttribute="trailing" secondItem="Y75-Pv-UMl" secondAttribute="trailing" type="default" id="cp7-Xc-Bon"/>
+                            <constraint firstAttribute="trailing" secondItem="0f2-vI-BL2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dfr-Hn-lbR"/>
+                            <constraint firstItem="YAb-Mc-CcX" firstAttribute="top" secondItem="caD-M1-ONd" secondAttribute="top" type="default" id="gT4-VS-SRk"/>
+                            <constraint firstItem="3Sx-3E-Ebf" firstAttribute="top" secondItem="Mge-DE-nkY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jCt-HB-cFC"/>
+                            <constraint firstItem="Mge-DE-nkY" firstAttribute="centerX" secondItem="3Sx-3E-Ebf" secondAttribute="centerX" type="default" id="kge-R5-eVd"/>
+                            <constraint firstItem="SY5-He-OS1" firstAttribute="leading" secondItem="Y75-Pv-UMl" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="m1a-AS-meY"/>
+                            <constraint firstAttribute="bottom" secondItem="0f2-vI-BL2" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="m43-Cd-fdC"/>
+                            <constraint firstItem="wpc-cG-bbA" firstAttribute="top" secondItem="Y75-Pv-UMl" secondAttribute="top" constant="20" symbolic="YES" type="user" id="mtk-YI-ZMm"/>
+                            <constraint firstAttribute="trailing" secondItem="olL-cb-SK0" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="nsw-oB-IWc"/>
+                            <constraint firstItem="olL-cb-SK0" firstAttribute="leading" secondItem="Y75-Pv-UMl" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="p9e-6T-9EM"/>
+                            <constraint firstItem="LZU-D4-NAU" firstAttribute="centerX" secondItem="olL-cb-SK0" secondAttribute="centerX" type="default" id="peL-yV-ZnT"/>
+                            <constraint firstItem="tim-oI-YEq" firstAttribute="leading" secondItem="Y75-Pv-UMl" secondAttribute="leading" constant="207" type="user" id="q5L-rh-TdQ"/>
+                            <constraint firstItem="YAb-Mc-CcX" firstAttribute="leading" secondItem="tim-oI-YEq" secondAttribute="trailing" constant="59" type="user" id="rQg-3W-CmX"/>
+                            <constraint firstItem="ggX-u3-hup" firstAttribute="leading" secondItem="caD-M1-ONd" secondAttribute="trailing" constant="58" type="user" id="rU9-6S-QBh"/>
+                            <constraint firstAttribute="bottom" secondItem="3Sx-3E-Ebf" secondAttribute="bottom" constant="12" id="s36-fu-xj0"/>
+                            <constraint firstItem="Fs1-E8-R31" firstAttribute="top" secondItem="Y75-Pv-UMl" secondAttribute="top" type="default" id="z9o-Zn-apx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Berechnung" id="g3q-2h-XB2"/>
+                    <connections>
+                        <outlet property="ergebnisAnzeige" destination="olL-cb-SK0" id="Odd-6L-Wab"/>
+                        <outlet property="pickerViewEins" destination="SY5-He-OS1" id="igq-sg-xnX"/>
+                        <outlet property="ringDrei" destination="caD-M1-ONd" id="Leq-Wb-eeX"/>
+                        <outlet property="ringEins" destination="tim-oI-YEq" id="4KM-bA-hRt"/>
+                        <outlet property="ringVier" destination="ggX-u3-hup" id="R8k-N0-elL"/>
+                        <outlet property="ringZwei" destination="YAb-Mc-CcX" id="pU6-2Q-FHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9M-l1-0wP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3054" y="718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cms-1.gif" width="120" height="60"/>
+        <image name="widerstand.png" width="728" height="342"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ThirdViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="berechnungPressed:"/>
+                <relationship kind="outlet" name="adView" candidateClass="ADBannerView"/>
+                <relationship kind="outlet" name="ergebnisAnzeige" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pickerViewEins" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="ringDrei" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ringEins" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ringVier" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ringZwei" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

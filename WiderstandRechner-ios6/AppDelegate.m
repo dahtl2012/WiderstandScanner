@@ -1,52 +1,24 @@
 //
 //  AppDelegate.m
-//  WiderstandScannerGit
+//  WiderstandRechner-ios6
 //
-//  Created by Dominik Arnhof on 07.09.12.
+//  Created by Dominik Arnhof on 22.11.12.
 //  Copyright (c) 2012 HTL Hollabrunn. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch] != NSOrderedAscending)
-
-#define IDIOM    UI_USER_INTERFACE_IDIOM()
-#define IPAD     UIUserInterfaceIdiomPad
-
-@interface AppDelegate ()
-    @property (strong, nonatomic) UIViewController *initialViewController;
-@end
-
 @implementation AppDelegate
-
-@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    
-    
-    
-    /*if(IDIOM == IPAD) {
-        NSLog(@"Device is an iPad");
-        UIStoryboard *mainStoryboard = nil;
-        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
-            mainStoryboard = [UIStoryboard storyboardWithName:@"IPadStoryboardAutoLayout" bundle:nil];
-        } else {
-            mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPad" bundle:nil];
-        }
-        
-        self.initialViewController = [mainStoryboard instantiateInitialViewController];
-        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        self.window.rootViewController = self.initialViewController;
-        [self.window makeKeyAndVisible];
-    }*/
-
-    
-    sleep(1);
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

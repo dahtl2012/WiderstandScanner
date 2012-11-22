@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B457DF761631444700011C67 /* cms-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B457DF751631444700011C67 /* cms-1.gif */; };
 		B47DBDFF15FDC673006EBC87 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47DBDFE15FDC673006EBC87 /* iAd.framework */; };
+		B48CD785165ECDF900F0D14E /* Landscape_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48CD784165ECDF900F0D14E /* Landscape_iPad.storyboard */; };
 		B48F2F1E15F9D55200F6F7A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */; };
 		B48F2F2015F9D55200F6F7A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F1F15F9D55200F6F7A5 /* Foundation.framework */; };
 		B48F2F2215F9D55200F6F7A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F2115F9D55200F6F7A5 /* CoreGraphics.framework */; };
@@ -35,6 +36,7 @@
 		B4BA67B5162827C600AE4948 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BA67B4162827C600AE4948 /* Default-Portrait@2x~ipad.png */; };
 		B4BA67B9162828A200AE4948 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BA67B8162828A200AE4948 /* Default-568h@2x.png */; };
 		B4D9C43415FA3A1800448A28 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B4D9C43315FA3A1800448A28 /* README.md */; };
+		B4ED2C37165EB5DB00E09CEC /* IPadStoryboardAutoLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4ED2C35165EB57800E09CEC /* IPadStoryboardAutoLayout.storyboard */; };
 		B4F081651627EAAE001E884B /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F081641627EAAE001E884B /* ThirdViewController.m */; };
 		B4F0816A1627ED7E001E884B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4F0816C1627ED7E001E884B /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,7 @@
 		40601EF815F9DAEA000C848D /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B457DF751631444700011C67 /* cms-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cms-1.gif"; sourceTree = "<group>"; };
 		B47DBDFE15FDC673006EBC87 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		B48CD784165ECDF900F0D14E /* Landscape_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landscape_iPad.storyboard; sourceTree = "<group>"; };
 		B48F2F1915F9D55200F6F7A5 /* WiderstandRechner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiderstandRechner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B48F2F1F15F9D55200F6F7A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +76,17 @@
 		B4BA67B4162827C600AE4948 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		B4BA67B8162828A200AE4948 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		B4D9C43315FA3A1800448A28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		B4ED2C17165EB43E00E09CEC /* WiderstandRechner-ios6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiderstandRechner-ios6-Info.plist"; sourceTree = "<group>"; };
+		B4ED2C19165EB43E00E09CEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4ED2C1B165EB43E00E09CEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4ED2C1D165EB43E00E09CEC /* WiderstandRechner-ios6-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiderstandRechner-ios6-Prefix.pch"; sourceTree = "<group>"; };
+		B4ED2C1E165EB43E00E09CEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B4ED2C1F165EB43E00E09CEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B4ED2C21165EB43E00E09CEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B4ED2C23165EB43F00E09CEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B4ED2C25165EB43F00E09CEC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B4ED2C34165EB57800E09CEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/IPadStoryboardAutoLayout.storyboard; sourceTree = "<group>"; };
+		B4ED2C36165EB57900E09CEC /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/IPadStoryboardAutoLayout.storyboard; sourceTree = "<group>"; };
 		B4EF370E162739E500C13A9E /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B4EF370F162739E500C13A9E /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B4EF3710162739E500C13A9E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -105,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				B48F2F2315F9D55200F6F7A5 /* WiderstandScannerGit */,
+				B4ED2C15165EB43E00E09CEC /* WiderstandRechner-ios6 */,
 				B48F2F1C15F9D55200F6F7A5 /* Frameworks */,
 				B48F2F1A15F9D55200F6F7A5 /* Products */,
 				B4D9C43315FA3A1800448A28 /* README.md */,
@@ -146,6 +161,8 @@
 				B457DF751631444700011C67 /* cms-1.gif */,
 				B48F2F2F15F9D55200F6F7A5 /* MainStoryboard_iPhone.storyboard */,
 				B48F2F3215F9D55200F6F7A5 /* MainStoryboard_iPad.storyboard */,
+				B4ED2C35165EB57800E09CEC /* IPadStoryboardAutoLayout.storyboard */,
+				B48CD784165ECDF900F0D14E /* Landscape_iPad.storyboard */,
 				B48F2F2415F9D55200F6F7A5 /* Supporting Files */,
 				B4F0816C1627ED7E001E884B /* Localizable.strings */,
 			);
@@ -196,6 +213,30 @@
 				B4BA67AA1628273900AE4948 /* Default.png */,
 			);
 			name = Launchimages;
+			sourceTree = "<group>";
+		};
+		B4ED2C15165EB43E00E09CEC /* WiderstandRechner-ios6 */ = {
+			isa = PBXGroup;
+			children = (
+				B4ED2C1E165EB43E00E09CEC /* AppDelegate.h */,
+				B4ED2C1F165EB43E00E09CEC /* AppDelegate.m */,
+				B4ED2C16165EB43E00E09CEC /* Supporting Files */,
+			);
+			path = "WiderstandRechner-ios6";
+			sourceTree = "<group>";
+		};
+		B4ED2C16165EB43E00E09CEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4ED2C17165EB43E00E09CEC /* WiderstandRechner-ios6-Info.plist */,
+				B4ED2C18165EB43E00E09CEC /* InfoPlist.strings */,
+				B4ED2C1B165EB43E00E09CEC /* main.m */,
+				B4ED2C1D165EB43E00E09CEC /* WiderstandRechner-ios6-Prefix.pch */,
+				B4ED2C21165EB43E00E09CEC /* Default.png */,
+				B4ED2C23165EB43F00E09CEC /* Default@2x.png */,
+				B4ED2C25165EB43F00E09CEC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +309,8 @@
 				B4BA67B5162827C600AE4948 /* Default-Portrait@2x~ipad.png in Resources */,
 				B4BA67B9162828A200AE4948 /* Default-568h@2x.png in Resources */,
 				B457DF761631444700011C67 /* cms-1.gif in Resources */,
+				B4ED2C37165EB5DB00E09CEC /* IPadStoryboardAutoLayout.storyboard in Resources */,
+				B48CD785165ECDF900F0D14E /* Landscape_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +355,23 @@
 				B4EF370F162739E500C13A9E /* de */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B4ED2C18165EB43E00E09CEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4ED2C19165EB43E00E09CEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B4ED2C35165EB57800E09CEC /* IPadStoryboardAutoLayout.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4ED2C34165EB57800E09CEC /* en */,
+				B4ED2C36165EB57900E09CEC /* de */,
+			);
+			name = IPadStoryboardAutoLayout.storyboard;
 			sourceTree = "<group>";
 		};
 		B4F0816C1627ED7E001E884B /* Localizable.strings */ = {
