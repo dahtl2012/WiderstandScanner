@@ -68,6 +68,7 @@
     [self setRingDrei:nil];
     [self setRingVier:nil];
     [self setAdView:nil];
+    [self setMinMaxLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -303,6 +304,54 @@
     k = 0;
     m = 0;
     g = 0;
+    
+    if (d != 0) {
+        d = d / 100;
+        float hilf = erg * d;
+        self.ergMax = erg + hilf;
+        self.ergMin  = erg - hilf;
+        
+        if ((erg / 1000 <= 1)) {
+            k = 0;
+            m = 0;
+            g = 0;
+        } else if ((erg / 1000 >= 1) && (erg / 1000000 <= 1)) {
+            k = 1;
+        } else if ((erg / 1000000 >= 1) && (erg / 1000000000 <= 1)) {
+            m = 1;
+        } else if ((erg / 1000000000 >= 1)) {
+            g = 1;
+        }
+        
+        if (k == 1) {
+            //self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fkΩ +/- %.2f%%", erg/1000, d];
+            self.minMaxLabel.text = [NSString stringWithFormat:@"Max.:%.2fkΩ  Min.:%.2fkΩ", self.ergMax/1000, self.ergMin/1000];
+        }
+        else if (m == 1) {
+            //self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fMΩ +/- %.2f%%", erg/1000000, d];
+            self.minMaxLabel.text = [NSString stringWithFormat:@"Max.:%.2fMΩ  Min.:%.2fMΩ", self.ergMax/1000000, self.ergMin/1000000];
+        }
+        else if (g == 1) {
+            //self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fGΩ +/- %.2f%%", erg/1000000000, d];
+            self.minMaxLabel.text = [NSString stringWithFormat:@"Max.:%.2fGΩ  Min.:%.2fGΩ", self.ergMax/1000000000, self.ergMin/1000000000];
+        }
+        else {
+            
+            //self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fΩ +/- %.2f%%", erg, d];
+            self.minMaxLabel.text = [NSString stringWithFormat:@"Max.:%.2fΩ  Min.:%.2fΩ", self.ergMax, self.ergMin];
+        }
+        
+        k = 0;
+        m = 0;
+        g = 0;
+
+        
+        //self.minMaxLabel.text = [NSString stringWithFormat:@"Max.:%.2f  Min.:%.2f", self.ergMax, self.ergMin];
+    } else {
+        self.minMaxLabel.text = [NSString stringWithFormat:@""];
+    }
+    
+    
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {

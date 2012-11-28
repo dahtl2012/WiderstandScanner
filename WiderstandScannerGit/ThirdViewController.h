@@ -18,9 +18,12 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ringZwei;
 @property (weak, nonatomic) IBOutlet UIImageView *ringDrei;
 @property (weak, nonatomic) IBOutlet UIImageView *ringVier;
+@property (weak, nonatomic) IBOutlet UILabel *minMaxLabel;
 
 @property (strong, nonatomic) NSMutableArray *dataEins;
 @property (nonatomic) float erg;
+@property (nonatomic) float ergMax;
+@property (nonatomic) float ergMin;
 
 @property (weak, nonatomic) IBOutlet ADBannerView *adView;
 

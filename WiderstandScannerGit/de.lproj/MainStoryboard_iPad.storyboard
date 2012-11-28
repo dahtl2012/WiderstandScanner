@@ -85,6 +85,13 @@
                                     <navigationItem title="Widerstands Rechner" id="Fl2-Mz-Wl2"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IHF-QG-Bp5">
+                                <rect key="frame" x="768" y="394" width="236" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -93,6 +100,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="ergebnisAnzeige" destination="Aq0-VM-mHZ" id="VGt-h5-Y70"/>
+                        <outlet property="minMaxLabel" destination="IHF-QG-Bp5" id="EC2-tl-VDO"/>
                         <outlet property="pickerViewEins" destination="E2P-0W-INs" id="ain-Qm-et7"/>
                         <outlet property="ringDrei" destination="pcP-II-fU3" id="8GS-QK-fkF"/>
                         <outlet property="ringEins" destination="cZN-YU-7AO" id="SM2-fm-kb3"/>
@@ -109,21 +117,6 @@
         <image name="cms-1.gif" width="120" height="60"/>
         <image name="widerstand.png" width="728" height="342"/>
     </resources>
-    <classes>
-        <class className="ThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="berechnungPressed:"/>
-                <relationship kind="outlet" name="adView" candidateClass="ADBannerView"/>
-                <relationship kind="outlet" name="ergebnisAnzeige" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pickerViewEins" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="ringDrei" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringEins" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringVier" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ringZwei" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
