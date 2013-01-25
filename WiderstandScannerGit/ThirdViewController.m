@@ -66,6 +66,7 @@
     [self setRingDrei:nil];
     [self setRingVier:nil];
     [self setAdView:nil];
+    [self setMinMaxLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -91,212 +92,6 @@
     return [self.dataEins objectAtIndex:row];
 }
 
-
-- (IBAction)berechnungPressed:(id)sender {
-    
-    NSInteger null, eins, zwei, drei, k, m, g;
-    float a, b, c, d;
-    
-    null = [self.pickerViewEins selectedRowInComponent:0];
-    eins = [self.pickerViewEins selectedRowInComponent:1];
-    zwei = [self.pickerViewEins selectedRowInComponent:2];
-    drei = [self.pickerViewEins selectedRowInComponent:3];
-    
-    switch (null) {
-        case 0:
-            a = 0;
-            break;
-        case 1:
-            a = 1;
-            break;
-        case 2:
-            a = 2;
-            break;
-        case 3:
-            a = 3;
-            break;
-        case 4:
-            a = 4;
-            break;
-        case 5:
-            a = 5;
-            break;
-        case 6:
-            a = 6;
-            break;
-        case 7:
-            a = 7;
-            break;
-        case 8:
-            a = 8;
-            break;
-        case 9:
-            a = 9;
-            break;
-            
-        default:
-            break;
-    }
-    switch (eins) {
-        case 0:
-            b = 0;
-            break;
-        case 1:
-            b = 1;
-            break;
-        case 2:
-            b = 2;
-            break;
-        case 3:
-            b = 3;
-            break;
-        case 4:
-            b = 4;
-            break;
-        case 5:
-            b = 5;
-            break;
-        case 6:
-            b = 6;
-            break;
-        case 7:
-            b = 7;
-            break;
-        case 8:
-            b = 8;
-            break;
-        case 9:
-            b = 9;
-            break;
-            
-        default:
-            break;
-    }
-    switch (zwei) {
-        case 0:
-            c = 1;
-            break;
-        case 1:
-            c = 10;
-            break;
-        case 2:
-            c = 100;
-            break;
-        case 3:
-            c = 1000;
-            break;
-        case 4:
-            c = 10000;
-            break;
-        case 5:
-            c = 100000;
-            break;
-        case 6:
-            c = 1000000;
-            break;
-        case 7:
-            c = 10000000;
-            break;
-        case 8:
-            c = 100000000;
-            break;
-        case 9:
-            c = 1000000000;
-            break;
-        case 10:
-            c = 0.01;
-            break;
-        case 11:
-            c = 0.1;
-            break;
-            
-        default:
-            break;
-    }
-    switch (drei) {
-        case 0:
-            d = 0;
-            break;
-        case 1:
-            d = 1;
-            break;
-        case 2:
-            d = 2;
-            break;
-        case 3:
-            d = 0;
-            break;
-        case 4:
-            d = 0;
-            break;
-        case 5:
-            d = 0.5;
-            break;
-        case 6:
-            d = 0.25;
-            break;
-        case 7:
-            d = 0.1;
-            break;
-        case 8:
-            d = 0.05;
-            break;
-        case 9:
-            d = 0;
-            break;
-        case 10:
-            d = 10;
-            break;
-        case 11:
-            d = 5;
-            break;
-            
-        default:
-            break;
-    }
-    
-    
-    self.erg = (a*10)+b;
-    self.erg = erg*c;
-    
-    /*if ((erg / 1000 >= 1) && (erg / 1000 <= 1000)) {
-     k = 1;
-     } else if ((erg / 1000000 >= 1) && (erg / 1000000 <= 1000000)) {
-     m = 1;
-     } else if ((erg / 1000000000 >= 1) && (erg / 1000000000 <= 1000000000)) {
-     g = 1;
-     }*/
-    
-    if ((erg / 1000 <= 1)) {
-        k = 0;
-        m = 0;
-        g = 0;
-    } else if ((erg / 1000 >= 1) && (erg / 1000000 <= 1)) {
-        k = 1;
-    } else if ((erg / 1000000 >= 1) && (erg / 1000000000 <= 1)) {
-        m = 1;
-    } else if ((erg / 1000000000 >= 1)) {
-        g = 1;
-    }
-    
-    if (k == 1) {
-        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fkΩ +/- %.2f%%", erg/1000, d];
-    }
-    else if (m == 1) {
-        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fMΩ +/- %.2f%%", erg/1000000, d];
-    }
-    else if (g == 1) {
-        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fGΩ +/- %.2f%%", erg/1000000000, d];
-    }
-    else {
-        
-        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fΩ +/- %.2f%%", erg, d];
-    }
-    
-    k = 0;
-    m = 0;
-    g = 0;
-}
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
@@ -324,6 +119,8 @@
     [self setColourForRing:1 AndRow:eins];
     [self setColourForRing:2 AndRow:zwei];
     [self setColourForRing:3 AndRow:drei];
+    
+    [self calculateAndDisplay];
     
 }
 
@@ -585,8 +382,316 @@
     }
     retval.text = [self.dataEins objectAtIndex:row];
     retval.font = [UIFont systemFontOfSize:19];
+    //retval.backgroundColor = nil;
+    
+    switch (row) {
+        case 0:
+            retval.backgroundColor = [UIColor blackColor];
+            retval.textColor = [UIColor whiteColor];
+            break;
+            
+        case 1:
+            retval.backgroundColor = [UIColor brownColor];
+            retval.textColor = [UIColor whiteColor];
+            break;
+            
+        case 2:
+            retval.backgroundColor = [UIColor redColor];
+            retval.textColor = [UIColor whiteColor];
+            break;
+            
+        case 3:
+            retval.backgroundColor = [UIColor orangeColor];
+            retval.textColor = [UIColor whiteColor];
+            break;
+            
+        case 4:
+            retval.backgroundColor = [UIColor yellowColor];
+            retval.textColor = [UIColor grayColor];
+            break;
+            
+        case 5:
+            retval.backgroundColor = [UIColor greenColor];
+            retval.textColor = [UIColor grayColor];
+            break;
+            
+        case 6:
+            retval.backgroundColor = [UIColor blueColor];
+            retval.textColor = [UIColor whiteColor];
+            break;
+            
+        case 7:
+            retval.backgroundColor = [UIColor purpleColor];
+            retval.textColor = [UIColor whiteColor];
+            break;
+            
+        case 8:
+            retval.backgroundColor = [UIColor grayColor];
+            retval.textColor = [UIColor blackColor];
+            break;
+            
+        case 9:
+            retval.backgroundColor = [UIColor whiteColor];
+            retval.textColor = [UIColor blackColor];
+            break;
+            
+        case 10:
+            retval.backgroundColor = [UIColor colorWithRed:229.0/255.0 green:229.0/255.0 blue:229.0/255.0 alpha:1.0];
+            retval.textColor = [UIColor blackColor];
+            break;
+            
+        case 11:
+            retval.backgroundColor = [UIColor colorWithRed:204.0/255.0 green:153.0/255.0 blue:51.0/255.0 alpha:1.0];
+            retval.textColor = [UIColor blackColor];
+            break;
+            
+        default:
+            break;
+    }
     
     return retval;
+}
+
+
+-(void)calculateAndDisplay {
+    
+    NSInteger null, eins, zwei, drei, k, m, g;
+    float a, b, c, d;
+    
+    null = [self.pickerViewEins selectedRowInComponent:0];
+    eins = [self.pickerViewEins selectedRowInComponent:1];
+    zwei = [self.pickerViewEins selectedRowInComponent:2];
+    drei = [self.pickerViewEins selectedRowInComponent:3];
+    
+    switch (null) {
+        case 0:
+            a = 0;
+            break;
+        case 1:
+            a = 1;
+            break;
+        case 2:
+            a = 2;
+            break;
+        case 3:
+            a = 3;
+            break;
+        case 4:
+            a = 4;
+            break;
+        case 5:
+            a = 5;
+            break;
+        case 6:
+            a = 6;
+            break;
+        case 7:
+            a = 7;
+            break;
+        case 8:
+            a = 8;
+            break;
+        case 9:
+            a = 9;
+            break;
+            
+        default:
+            break;
+    }
+    switch (eins) {
+        case 0:
+            b = 0;
+            break;
+        case 1:
+            b = 1;
+            break;
+        case 2:
+            b = 2;
+            break;
+        case 3:
+            b = 3;
+            break;
+        case 4:
+            b = 4;
+            break;
+        case 5:
+            b = 5;
+            break;
+        case 6:
+            b = 6;
+            break;
+        case 7:
+            b = 7;
+            break;
+        case 8:
+            b = 8;
+            break;
+        case 9:
+            b = 9;
+            break;
+            
+        default:
+            break;
+    }
+    switch (zwei) {
+        case 0:
+            c = 1;
+            break;
+        case 1:
+            c = 10;
+            break;
+        case 2:
+            c = 100;
+            break;
+        case 3:
+            c = 1000;
+            break;
+        case 4:
+            c = 10000;
+            break;
+        case 5:
+            c = 100000;
+            break;
+        case 6:
+            c = 1000000;
+            break;
+        case 7:
+            c = 10000000;
+            break;
+        case 8:
+            c = 100000000;
+            break;
+        case 9:
+            c = 1000000000;
+            break;
+        case 10:
+            c = 0.01;
+            break;
+        case 11:
+            c = 0.1;
+            break;
+            
+        default:
+            break;
+    }
+    switch (drei) {
+        case 0:
+            d = 0;
+            break;
+        case 1:
+            d = 1;
+            break;
+        case 2:
+            d = 2;
+            break;
+        case 3:
+            d = 0;
+            break;
+        case 4:
+            d = 0;
+            break;
+        case 5:
+            d = 0.5;
+            break;
+        case 6:
+            d = 0.25;
+            break;
+        case 7:
+            d = 0.1;
+            break;
+        case 8:
+            d = 0.05;
+            break;
+        case 9:
+            d = 0;
+            break;
+        case 10:
+            d = 10;
+            break;
+        case 11:
+            d = 5;
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+    self.erg = (a*10)+b;
+    self.erg = erg*c;
+    
+    
+    if ((erg / 1000 <= 1)) {
+        k = 0;
+        m = 0;
+        g = 0;
+    } else if ((erg / 1000 >= 1) && (erg / 1000000 <= 1)) {
+        k = 1;
+    } else if ((erg / 1000000 >= 1) && (erg / 1000000000 <= 1)) {
+        m = 1;
+    } else if ((erg / 1000000000 >= 1)) {
+        g = 1;
+    }
+    
+    if (k == 1) {
+        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fkΩ +/- %.2f%%", erg/1000, d];
+    }
+    else if (m == 1) {
+        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fMΩ +/- %.2f%%", erg/1000000, d];
+    }
+    else if (g == 1) {
+        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fGΩ +/- %.2f%%", erg/1000000000, d];
+    }
+    else {
+        
+        self.ergebnisAnzeige.text = [NSString stringWithFormat:@"%.2fΩ +/- %.2f%%", erg, d];
+    }
+    
+    k = 0;
+    m = 0;
+    g = 0;
+    
+    if (d != 0) {
+        d = d / 100;
+        float hilf = erg * d;
+        self.ergMax = erg + hilf;
+        self.ergMin  = erg - hilf;
+        
+        if ((erg / 1000 <= 1)) {
+            k = 0;
+            m = 0;
+            g = 0;
+        } else if ((erg / 1000 >= 1) && (erg / 1000000 <= 1)) {
+            k = 1;
+        } else if ((erg / 1000000 >= 1) && (erg / 1000000000 <= 1)) {
+            m = 1;
+        } else if ((erg / 1000000000 >= 1)) {
+            g = 1;
+        }
+        
+        if (k == 1) {
+            self.minMaxLabel.text = [NSString stringWithFormat:@"Min.:%.2fkΩ  Max.:%.2fkΩ", self.ergMin/1000, self.ergMax/1000];
+        }
+        else if (m == 1) {
+            self.minMaxLabel.text = [NSString stringWithFormat:@"Min.:%.2fMΩ  Max.:%.2fMΩ", self.ergMin/1000000, self.ergMax/1000000];
+        }
+        else if (g == 1) {
+            self.minMaxLabel.text = [NSString stringWithFormat:@"Min.:%.2fGΩ  Max.:%.2fGΩ", self.ergMin/1000000000, self.ergMax/1000000000];
+        }
+        else {
+            
+            self.minMaxLabel.text = [NSString stringWithFormat:@"Min.:%.2fΩ  Max.:%.2fΩ", self.ergMin, self.ergMax];
+        }
+        
+        k = 0;
+        m = 0;
+        g = 0;
+        
+        
+        //self.minMaxLabel.text = [NSString stringWithFormat:@"Max.:%.2f  Min.:%.2f", self.ergMax, self.ergMin];
+    } else {
+        self.minMaxLabel.text = [NSString stringWithFormat:@""];
+    }
 }
 
 @end

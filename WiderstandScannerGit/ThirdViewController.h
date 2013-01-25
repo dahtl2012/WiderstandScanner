@@ -12,8 +12,8 @@
 @interface ThirdViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerViewEins;
-- (IBAction)berechnungPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *ergebnisAnzeige;
+@property (weak, nonatomic) IBOutlet UILabel *minMaxLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *ringEins;
 @property (weak, nonatomic) IBOutlet UIImageView *ringZwei;
 @property (weak, nonatomic) IBOutlet UIImageView *ringDrei;
@@ -21,6 +21,8 @@
 
 @property (strong, nonatomic) NSMutableArray *dataEins;
 @property (nonatomic) float erg;
+@property (nonatomic) float ergMin;
+@property (nonatomic) float ergMax;
 
 @property (weak, nonatomic) IBOutlet ADBannerView *adView;
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B43A08E716A4AA1E00E29718 /* widerstand 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B43A08E616A4AA1E00E29718 /* widerstand 2.png */; };
 		B457DF761631444700011C67 /* cms-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B457DF751631444700011C67 /* cms-1.gif */; };
 		B47DBDFF15FDC673006EBC87 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47DBDFE15FDC673006EBC87 /* iAd.framework */; };
 		B48F2F1E15F9D55200F6F7A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F2F1D15F9D55200F6F7A5 /* UIKit.framework */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		40601EF815F9DAEA000C848D /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		B43A08E616A4AA1E00E29718 /* widerstand 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "widerstand 2.png"; sourceTree = "<group>"; };
 		B457DF751631444700011C67 /* cms-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cms-1.gif"; sourceTree = "<group>"; };
 		B47DBDFE15FDC673006EBC87 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		B48F2F1915F9D55200F6F7A5 /* WiderstandRechner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiderstandRechner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +170,7 @@
 			children = (
 				40601EF815F9DAEA000C848D /* ThirdViewController.h */,
 				B4F081641627EAAE001E884B /* ThirdViewController.m */,
+				B43A08E616A4AA1E00E29718 /* widerstand 2.png */,
 				B48F2F5415FA02B300F6F7A5 /* widerstand.png */,
 			);
 			name = Eingabe;
@@ -268,6 +271,7 @@
 				B4BA67B5162827C600AE4948 /* Default-Portrait@2x~ipad.png in Resources */,
 				B4BA67B9162828A200AE4948 /* Default-568h@2x.png in Resources */,
 				B457DF761631444700011C67 /* cms-1.gif in Resources */,
+				B43A08E716A4AA1E00E29718 /* widerstand 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
