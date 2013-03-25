@@ -694,4 +694,8 @@
     }
 }
 
+- (IBAction)adPressed:(id)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.htl-hl.ac.at/cms/index.php?id=el"]];
+}
 @end

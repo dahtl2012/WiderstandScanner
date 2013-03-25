@@ -1,110 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="dd5-AO-uCS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="71A-dy-xij">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Third View Controller - Berechnung-->
-        <scene sceneID="3Xm-Ys-efY">
+        <scene sceneID="f4i-9w-Vh7">
             <objects>
-                <viewController id="dd5-AO-uCS" customClass="ThirdViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9nJ-wc-RlD">
+                <viewController id="71A-dy-xij" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sNB-z0-Onq">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="16H-Oa-Rjl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="EFi-yj-hzT">
                                 <rect key="frame" x="0.0" y="876" width="768" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <pickerView contentMode="scaleToFill" id="ylC-Qb-R16">
+                            <pickerView contentMode="scaleToFill" id="6Yi-Dy-zvr">
                                 <rect key="frame" x="20" y="370" width="728" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="dd5-AO-uCS" id="8P3-ie-b4O"/>
-                                    <outlet property="delegate" destination="dd5-AO-uCS" id="tcf-2t-e4f"/>
+                                    <outlet property="dataSource" destination="71A-dy-xij" id="qsg-Lz-uJQ"/>
+                                    <outlet property="delegate" destination="71A-dy-xij" id="aJi-iD-qDA"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RV6-Rj-cL4">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ldo-JJ-4G4">
                                 <rect key="frame" x="20" y="650" width="728" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="widerstand.png" id="pf9-bu-O32">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="widerstand.png" id="Cyj-cj-sv1">
                                 <rect key="frame" x="20" y="20" width="728" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="7SR-Dz-yPC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Cjv-jg-Xd0">
                                 <rect key="frame" x="312" y="124" width="48" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Hud-i7-Ggc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="G31-dr-z2c">
                                 <rect key="frame" x="416" y="124" width="47" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="9x1-UE-Gbh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="8cO-ox-l4H">
                                 <rect key="frame" x="521" y="124" width="49" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Gvd-2u-h6y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="lpk-Gr-CEB">
                                 <rect key="frame" x="207" y="124" width="46" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" id="yi1-bc-hC7">
+                            <navigationBar contentMode="scaleToFill" id="Wge-Ta-GgA">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Widerstands Rechner" id="Vf7-De-19I"/>
+                                    <navigationItem title="Widerstands Rechner" id="WcM-kH-TBL"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cms-1.gif" id="GTU-BQ-ip2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cms-1.gif" id="wYI-nL-tQw">
                                 <rect key="frame" x="20" y="881" width="155" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Elektronik und Technische Informatik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YSy-Mk-j3A">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Elektronik und Technische Informatik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uzV-3x-MhD">
                                 <rect key="frame" x="183" y="963" width="565" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hollabrunn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WKJ-8u-Gze">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hollabrunn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WeX-9s-fpK">
                                 <rect key="frame" x="30" y="971" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BwM-v3-JPj">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E6Z-bi-CXz">
                                 <rect key="frame" x="20" y="727" width="728" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleToFill" id="iYK-kE-O44">
+                                <rect key="frame" x="0.0" y="876" width="768" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5vY-aW-Aeq" appends="YES" id="xx3-YQ-cdd"/>
+                                </connections>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Berechnung" id="NfU-so-vpK"/>
+                    <tabBarItem key="tabBarItem" title="Berechnung" id="ZPb-6l-1nD"/>
                     <connections>
-                        <outlet property="ergebnisAnzeige" destination="RV6-Rj-cL4" id="qWN-hd-ilc"/>
-                        <outlet property="minMaxLabel" destination="BwM-v3-JPj" id="YyB-oG-DOP"/>
-                        <outlet property="pickerViewEins" destination="ylC-Qb-R16" id="IaP-0o-ewx"/>
-                        <outlet property="ringDrei" destination="Hud-i7-Ggc" id="xf0-jc-peH"/>
-                        <outlet property="ringEins" destination="Gvd-2u-h6y" id="Ehv-Dz-0ss"/>
-                        <outlet property="ringVier" destination="9x1-UE-Gbh" id="GNV-ta-miK"/>
-                        <outlet property="ringZwei" destination="7SR-Dz-yPC" id="s9N-x4-81n"/>
+                        <outlet property="ergebnisAnzeige" destination="Ldo-JJ-4G4" id="gOB-TL-Ojm"/>
+                        <outlet property="minMaxLabel" destination="E6Z-bi-CXz" id="W2L-39-gHI"/>
+                        <outlet property="pickerViewEins" destination="6Yi-Dy-zvr" id="fFl-HX-tJX"/>
+                        <outlet property="ringDrei" destination="G31-dr-z2c" id="6h2-RR-YRF"/>
+                        <outlet property="ringEins" destination="lpk-Gr-CEB" id="Eew-A3-nDd"/>
+                        <outlet property="ringVier" destination="8cO-ox-l4H" id="3Zl-Wp-giT"/>
+                        <outlet property="ringZwei" destination="Cjv-jg-Xd0" id="SVV-VF-eKk"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1eG-4s-iBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xy-0l-ugI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5vY-aW-Aeq">
+                    <connections>
+                        <action selector="adPressed:" destination="71A-dy-xij" id="OzQ-Ck-0w1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1098" y="-362"/>
+            <point key="canvasLocation" x="3054" y="718"/>
         </scene>
     </scenes>
     <resources>

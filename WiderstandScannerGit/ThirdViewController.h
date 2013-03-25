@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ringZwei;
 @property (weak, nonatomic) IBOutlet UIImageView *ringDrei;
 @property (weak, nonatomic) IBOutlet UIImageView *ringVier;
+- (IBAction)adPressed:(id)sender;
 
 @property (strong, nonatomic) NSMutableArray *dataEins;
 @property (nonatomic) float erg;
